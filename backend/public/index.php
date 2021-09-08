@@ -13,5 +13,7 @@ $middleware($app);
 
 $routes = require __DIR__ . '/../app/routes.php';
 $routes($app);
+require __DIR__ . '/../app/autoloader.php';
+
 $app->run();
 

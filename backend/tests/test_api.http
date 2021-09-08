@@ -1,0 +1,118 @@
+# https://www.youtube.com/watch?v=3QLcHjNp-08&ab_channel=FaztCode
+@API = http://127.0.0.1:8081
+
+
+### test 1
+# GET {{API}}/test/1 HTTP/1.1
+# X-Auth-Email: {{EMAIL}}
+# X-Auth-Key: {{KEY}}
+# content-type: application/json
+
+### `GET /issue/{:issue}` - Returns the status of issue
+GET {{API}}/issue/234 HTTP/1.1
+content-type: application/json
+
+#### `POST /issue/{:issue}/vote` - Used to vote `{:issue}`. Must receive a payload with the vote value.    
+POST {{API}}/issue/234/vote HTTP/1.1
+content-type: application/json
+
+{
+    "value":8,
+    "name":"florencia"
+}
+
+#### `POST /issue/{:issue}/vote` - Used to vote `{:issue}`. Must receive a payload with the vote value.    
+POST {{API}}/issue/456/vote HTTP/1.1
+content-type: application/json
+
+{
+    "value":12,
+    "name":"manolo"
+}
+
+
+#### `POST /issue/{:issue}/vote` - Used to vote `{:issue}`. Must receive a payload with the vote value.    
+POST {{API}}/issue/2345/vote HTTP/1.1
+content-type: application/json
+
+{
+    "value":8,
+    "name":"florencia"
+}
+
+#### `POST /issue/{:issue}/vote` - Used to vote `{:issue}`. Must receive a payload with the vote value.    
+POST {{API}}/issue/234/vote HTTP/1.1
+content-type: application/json
+
+{
+    "value":15,
+    "name":"pedro"
+}
+
+#### `POST /issue/{:issue}/vote` - Used to vote `{:issue}`. Must receive a payload with the vote value.    
+POST {{API}}/issue/234/vote HTTP/1.1
+content-type: application/json
+
+{
+    "value":17,
+    "name":"sofia"
+}
+
+
+#### `POST /issue/{:issue}/vote` - Used to vote `{:issue}`. Must receive a payload with the vote value.    
+POST {{API}}/issue/234/vote HTTP/1.1
+content-type: application/json
+
+{
+    "value":8,
+    "name":"manolo"
+}
+
+
+### `POST /issue/{:issue}/join` - Used to join `{:issue}`. 
+POST {{API}}/issue/234/join HTTP/1.1
+content-type: application/json
+
+{
+    "name":"florencia"
+}
+
+### `POST /issue/{:issue}/join` - Used to join `{:issue}`. 
+POST {{API}}/issue/234/join HTTP/1.1
+content-type: application/json
+
+{
+    "name":"pedro"
+}
+
+### `POST /issue/{:issue}/join` - Used to join `{:issue}`. 
+POST {{API}}/issue/234/join HTTP/1.1
+content-type: application/json
+
+{
+    "name":"sofia"
+}
+
+### `POST /issue/{:issue}/join` - Used to join `{:issue}`. 
+POST {{API}}/issue/456/join HTTP/1.1
+content-type: application/json
+
+{
+    "name":"manolo"
+}
+
+### `POST /issue/{:issue}/join` - Used to join `{:issue}`. 
+POST {{API}}/issue/456/join HTTP/1.1
+content-type: application/json
+
+{
+    "name":"iturria"
+}
+
+### `POST /issue/{:issue}/join` - Used to join `{:issue}`. 
+POST {{API}}/issue/234/join HTTP/1.1
+content-type: application/json
+
+{
+    "name":"noe"
+}
