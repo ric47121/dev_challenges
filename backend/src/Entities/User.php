@@ -24,5 +24,9 @@ class User{
         $this->status = 'voted';
     }
 
+    public function permitVote(): bool
+    {
+        return $this->status == 'waiting';
+    }
 
 }
