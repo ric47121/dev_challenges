@@ -51,7 +51,7 @@ export default {
   name: 'Lobby',
   data() {
     return {
-      ip: 'localhost',
+      ip: '161.35.57.160',
       user: '?',
       issue: 234,
       status: 'voting',
