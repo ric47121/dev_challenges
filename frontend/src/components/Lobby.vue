@@ -3,7 +3,7 @@
     <button @click="login()">login</button>
     you: {{user}} 
     <button @click="join()">join</button>
-    <!-- <button @click="refresh()">refresh</button> -->
+    <button @click="refresh()">refresh</button>
     <!-- <button @click="read()">read</button> -->
     <div class="vote">
       <ul id="voteList">
@@ -51,7 +51,6 @@ export default {
   name: 'Lobby',
   data() {
     return {
-      // ip: '192.168.0.207',
       ip: 'localhost',
       user: '?',
       issue: 234,
@@ -72,9 +71,6 @@ export default {
   computed: {
     you() { 
     
-      // return this.members[0] 
-
-      // return this.members.filter(o => o.name == 'pedro')
       let res = this.members.find(o => o.name == this.user)
       
       if( res ){
